@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>学生信息管理系统</title>
+	<meta charset="utf-8" content="text/html">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css"/>
+	<script type="text/JavaScript" src="js/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/Getparam.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/class.js"></script>
+	<script type="text/javascript" src="js/search.js"></script>
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div class="container">
+	<div class="row clearfix header">
+		<div class="col-md-2 col-xs-6 column">
+			<div class="logo"><img src="img/logo.png" alt="logo"></div>
+		</div>
+		<div class="col-md-8 column">
+		</div>
+		<div class="col-md-2 col-xs-6 column">
+			<div class="user">
+				<div class="user_img"><img src="img/default3.jpg" alt="头像"></div>
+				<div class="username"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container" id="body">
+	<div class="row clearfix">
+		<div class="col-md-2 column">
+			<ul class="nav nav-stacked nav-pills">
+				<li class="active">
+					<button class="btn btn-li" onclick="stab()"><span>学生管理</span></button>
+				</li>
+				<li>
+					<button class="btn btn-li" onclick="cdata()"><span>班级管理</span></button>
+				</li>
+				<li>
+					<button class="btn btn-li" onclick="search()"><span>信息查询</span></button>
+				</li>
+			</ul>
+		</div>
+		<div class="col-md-10 column table_r">
+			<table class="table">
+				<thead>
+				<tr>
+					<th>
+						学号
+					</th>
+					<th>
+						姓名
+					</th>
+					<th>
+						性别
+					</th>
+					<th>
+						班级
+					</th>
+					<th>
+						注册时间
+					</th>
+					<th>
+						操作
+					</th>
+				</tr>
+				</thead>
+				<tbody id="tbody-result">
+				</tbody>
+			</table>
+			<table class="table_cla">
+				<thead>
+				<tr>
+					<th>
+						班级号
+					</th>
+					<th>
+						班级名
+					</th>
+					<th>
+						注册时间
+					</th>
+					<th>
+						操作
+					</th>
+				</tr>
+				</thead>
+				<tbody id="tbody-result-cla">
+
+				</tbody>
+			</table>
+			<form role="form" class="form">
+				<div class="form-group">
+					<label for="searchsid">按学号查询</label>
+					<input type="text" class="form-control" id="searchsid" />
+					<button type="button" class="btn btn-info btn-sm btn-sub" onclick="search1()">
+						<span class="glyphicon glyphicon-search">查询</span></button>
+				</div>
+				<div class="form-group">
+					<label for="searchsname">按姓名查询</label><input type="text" class="form-control" id="searchsname" />
+					<button type="button" class="btn btn-info btn-sm btn-sub" onclick="search2()">
+						<span class="glyphicon glyphicon-search">查询</span></button>
+				</div>
+				<div class="form-group">
+					<label for="searchcid">按班级号查询</label><input type="text" class="form-control" id="searchcid" />
+					<button type="button" class="btn btn-info btn-sm btn-sub" onclick="search3()">
+						<span class="glyphicon glyphicon-search">查询</span></button>
+				</div>
+				<div class="form-group">
+					<label for="searchcname">按班级名查询</label><input type="text" class="form-control" id="searchcname" />
+					<button type="button" class="btn btn-info btn-sm btn-sub" onclick="search4()">
+						<span class="glyphicon glyphicon-search">查询</span></button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+</body>
+</html>

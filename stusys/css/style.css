@@ -1,0 +1,149 @@
+.container{
+	width: 100%;
+}
+.col-md-2,.col-md-10,.col-md-12{
+	padding: 0;
+	margin: 0;
+}
+.header{
+	background: #337ab7;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 105%;
+	z-index: 999;
+}
+#body{
+	position: absolute;
+	top: 50px;
+}
+.logo{
+	float: left;
+}
+.logo img{
+	width: 140px;
+	height: 50px;
+	margin-left: 30px;
+}
+.user{
+	float: left;
+	margin-left: 30%;
+}
+.user_img{
+	float: left;
+	line-height: 50px;
+}
+.user_img img{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+.username{
+	float: left;
+	font-size: 14px;
+	color: #fff;
+	line-height: 50px;
+	margin: 0 10px;
+}
+@media (max-width: 991px) {
+	.user{
+		float: right;
+	}
+}
+.nav{
+	background: #383E4B;
+}
+.active{
+	background: #2D323D;
+}
+.table_r{
+	background: #F5F5F5;
+}
+.table,.table_cla{
+	margin: 1%;
+	width: 98%;
+	background: #fff;
+}
+.table th,td{
+	text-align: center;
+}
+.table_cla th,td{
+	text-align: center;
+}
+.table_cla > thead > tr > th{
+	vertical-align: bottom;
+	border-bottom: 2px solid #ddd;
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td{
+	vertical-align: middle;
+}
+.table_cla > thead > tr > th, .table_cla > tbody > tr > th, .table_cla > tfoot > tr > th, .table_cla > thead > tr > td, .table_cla > tbody > tr > td, .table_cla > tfoot > tr > td{
+	padding: 8px;
+	line-height: 1.42857143;
+	border-top: 1px solid #ddd;
+}
+.form{
+	margin: 1%;
+	width: 98%;
+}
+.btn-sub{
+	margin-top: 15px;
+}
+.add{
+	margin: 1%;
+	width: 98%;
+}
+#cancel{
+	margin-left: 15px;
+}
+@media (max-width: 771px) {
+	#cancel{
+		margin-left: 0px;
+	}
+}
+.btn-danger{
+	margin-left: 15px;
+}
+@media (max-width: 771px) {
+	.btn-danger{
+		margin-left: 0px;
+	}
+}
+.add td{
+	text-align: left;
+}
+.plus td{
+	text-align: left;
+}
+.form-control{
+	margin-bottom: 10px;
+}
+#log{
+	margin-top: 220px;
+}
+.form-horizontal .control-label{
+	text-align: left;
+}
+.col-sm-offset-2{
+	margin-left: 33%;
+}
+.btn-li{
+	background: transparent;
+	width: 100%;
+	color: #ffffff;
+	text-align: left;
+	padding: 10px 0 10px 20px;
+}
+.btn-li:link,.btn-li:hover,.btn-li:visited,.btn-li:active,.btn-li:focus{
+	color: #ffffff;
+ 	border: none;
+	outline: none;
+	box-shadow: none;
+	background-color: #2D323D;
+}
+select{
+	height: 26px;
+}
+.totop{
+	margin-left: 15px;
+}
